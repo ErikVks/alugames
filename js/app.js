@@ -12,6 +12,6 @@ function alterarStatus(id){
 }
 
 function verificarStatus(botao,imagem){
-    if(botao.classList.contains('dashboard__item__button--return') || imagem.classList.contains('dashboard__item__img--rented')) return false;
+    if(botao.classList.contains('dashboard__item__button--return') && imagem.classList.contains('dashboard__item__img--rented')) return false;
     else return true;
 }
